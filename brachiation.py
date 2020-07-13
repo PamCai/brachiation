@@ -113,7 +113,10 @@ def rheo_calc(c,x,M,ku,kb,N,P,omega,
 
 	return G,G0
 
-# varying the concentration (dimensionless)
+###############################
+# Input parameter values here #
+###############################
+
 c = 1000.
 x = 1.
 M = 10
