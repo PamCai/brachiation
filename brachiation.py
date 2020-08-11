@@ -61,7 +61,7 @@ def rheo_calc(c,x,M,ku,kb,N,P,omega,
 	def phip(ind,p,M):
 		phip = np.zeros(M)
 		for i in ind:
-			phip[i-1] = np.cos(p*i/M)
+			phip[i-1] = np.sqrt(2.)*np.cos(np.pi*p*(i-1)/(M-1))
 		return phip
 
 	Phi_pp = np.zeros((P,P))
